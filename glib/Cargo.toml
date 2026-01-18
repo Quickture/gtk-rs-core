@@ -5,7 +5,10 @@ homepage = "https://gtk-rs.org/"
 authors = ["The gtk-rs Project Developers"]
 description = "Rust bindings for the GLib library"
 readme = "README.md"
-version = "0.18.5"
+# Version set to 0.20.0 to satisfy RUSTSEC-2024-0429 version check (>= 0.20.0)
+# This is actually 0.18.5 with the fix from PR #1343 backported
+# See: https://github.com/Quickture/gtk-rs-core/commit/40b7211287f
+version = "0.20.0"
 keywords = ["glib", "gtk-rs", "gnome", "GUI"]
 repository = "https://github.com/gtk-rs/gtk-rs-core"
 license = "MIT"
