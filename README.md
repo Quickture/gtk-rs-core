@@ -1,5 +1,19 @@
 # gtk-rs-core ![CI](https://github.com/gtk-rs/gtk-rs-core/workflows/CI/badge.svg)
 
+## Quickture fork retirement
+
+This fork is retired and preserved for historical build reproducibility. It
+backported RUSTSEC-2024-0429 to glib 0.18.5 on
+`quickture-glib-0.18.5-fix-rustsec-2024-0429`.
+
+Quickture's current `main`, `staging`, and `prod` no longer use this fork after
+the February 2, 2026 rollback
+(`04fdd60739daa5a5fea321a06c8a65142ffd49c9`). Historical v1.4.2 and two January
+release snapshots still pin
+[`40b7211287f85b7d06077dcf4457c80a4ab1c57e`](https://github.com/Quickture/gtk-rs-core/commit/40b7211287f85b7d06077dcf4457c80a4ab1c57e).
+The repository URL, patch branch, and history are retained for those builds.
+Retirement does not mean the advisory is fixed in current consumers.
+
 The `gtk-rs` organization aims to provide safe Rust binding over `GObject`-based libraries.
 You can find more about it on <https://gtk-rs.org>.
 
